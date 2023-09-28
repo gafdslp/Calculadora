@@ -1,7 +1,3 @@
-window.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('display').value = '';
-}); 
-
 function addToDisplay(value) {
     document.getElementById('display').value += value;
 }
@@ -11,7 +7,7 @@ function calculateResult() {
     try {
         const result = eval(displayValue);
         document.getElementById('display').value = result;
-    } catch (error) {
+        } catch (error) {
         alert('Buguei! Tente novamente');
     }
 }
